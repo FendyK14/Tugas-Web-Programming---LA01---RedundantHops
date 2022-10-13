@@ -1,0 +1,300 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    background-color: #FBD914;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+}
+
+.header a, .footer a{
+    text-decoration: none;
+}
+
+#logo{
+    color: #0058AB;
+    height: 8vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.tampilan_utama, .data_kelompok, .tambah_hal, .form_style, .sub_form_title{
+    padding: 3% 5% 0%;
+}
+
+#par_1, #par_2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+#par_1{
+    font-weight: bold;
+    font-size: 28px;
+}
+
+#par_2{
+    padding-top: 8px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.kelola{
+    padding: 18px 5% 22px;
+}
+
+.kelola button{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 80px;
+    width: 160px;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: transparent;
+    /* background-color: #0058AB; */
+    border: 3px solid #0058AB;
+    color: #0058AB;
+    -webkit-transition-duration: 1s;
+}
+
+.kelola button:hover{
+    background-color: #FBD914;
+    color: #0058AB;
+}
+
+.judul_2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    padding-bottom: 16px;
+}
+
+.isi{
+    text-align: center;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 150px;
+}
+
+.depan, .belakang{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+#depan_nama, #hover_me{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0058AB;
+}
+
+#belakang_nama, #teks{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FBD914;
+}
+
+#depan_nama, #belakang_nama{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#hover_me, #teks{
+    font-size: 14px;
+}
+
+
+#belakang_nama{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #FBD914;
+}
+
+.anggota:hover .isi{
+    transform: rotateX(180deg);
+}
+
+.anggota{
+    padding-bottom: 20px;
+}
+
+.depan{
+    background-color: #FBD914;
+    color: #0058AB;
+}
+
+.belakang{
+    transform: rotateX(180deg);
+    background-color: #0058AB;
+    color: #FBD914;
+}
+
+
+
+
+.footer{
+    background-color: #FBD914;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 22vh;
+}
+
+.logo_footer{
+    display: flex;
+    align-items: center;
+    border-right: 3px solid black;
+    padding-right: 90px;
+    height: 15vh;
+}
+
+.info_kontak p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding: 3px 0px;
+}
+
+.design_table{
+    border-collapse: collapse;
+}
+
+.design_table th, .design_table td{
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: left;
+    border: 0.5px solid #ddd;
+    text-align: center;
+}
+
+.design_table th{
+    background-color: #0058AB;
+    color: #FBD914;
+    font-weight: bold;
+}
+
+.arrange{
+    background-color: red;
+}
+
+.design_table td a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FBD914;
+    color: #0058AB;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #0058AB;
+}
+
+.design_table tr:nth-child(odd){
+    background-color: #fff8cf;
+}
+
+.aksi{
+    display: flex;
+    justify-content: center;
+}
+
+#del button{
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.design_table tr:hover{
+    background-color: rgb(239, 239, 239);
+}
+
+
+
+.tambah_hal button{
+    background-color: #FBD914;
+    color: #0058AB;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 8vh;
+    -webkit-transition-duration: 1s;
+}
+
+
+.tambah_hal button:hover{
+    background-color: #0058AB;
+    color: #FBD914;
+}
+
+.form_style{
+    background-color: #FBD914;
+}
+
+.nim, .nama, .nomor, .alamat{
+    padding-bottom: 45px;
+}
+
+.label_nim, .label_nama, .label_nomor, .label_alamat{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0058AB;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+.nim input, .nama input, .nomor input, .alamat input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #0058AB;
+    width: 45%;
+    height: 5vh;
+    font-style: italic;
+}
+
+
+#form_button{
+    border: none;
+    background-color: #0058AB;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FBD914;
+    border-radius: 8px;
+    width: 45%;
+    height: 5vh;
+    -webkit-transition-duration: 1s;
+}
+
+#form_button:hover{
+    background-color: #a3d3ff;
+    color: #0058AB;
+}
+
+
+.sub_form_title{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FBD914;
+    font-weight: bold;
+    font-size: 32px;
+    color: #0058AB;
+    padding-bottom: 30px;
+}
+
